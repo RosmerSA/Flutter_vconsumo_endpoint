@@ -85,18 +85,27 @@ class MyApp extends StatelessWidget {
                             ),
                           ),
                         ),
+                        Padding(padding: EdgeInsets.only(bottom: 46)),
                         Container(
                           padding:
                               const EdgeInsets.only(bottom: 16.0, top: 16.0),
                           child: ElevatedButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => BottomBar()),
-                                );
-                              },
-                              child: const Text("Sign in")),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => BottomBar()),
+                              );
+                            },
+                            child: Text("Sign in"),
+                            style: ElevatedButton.styleFrom(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 24.0, vertical: 18.0),
+                                textStyle: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                          ),
                         ),
                       ],
                     ),

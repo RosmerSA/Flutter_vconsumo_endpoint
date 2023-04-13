@@ -27,9 +27,9 @@ class CardApi extends StatelessWidget {
                   WidgetSpan(
                       child: Icon(Icons.numbers_rounded, color: Colors.grey)),
                   TextSpan(
-                    text: "Código de la empresa: $companyCode",
+                    text: "  Código de la empresa: $companyCode",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
@@ -45,9 +45,9 @@ class CardApi extends StatelessWidget {
                     child: Icon(Icons.other_houses, color: Colors.grey),
                   ),
                   TextSpan(
-                    text: "Nombre de la empresa: $companyName",
+                    text: "  Nombre de la empresa: $companyName",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),

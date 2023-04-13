@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_rosmer/features/card_api/CardApi.dart';
 import '../../API/Fetching.dart';
 
 void main() =>
@@ -16,9 +17,9 @@ class CrudPage extends StatelessWidget {
           title: const Text('CRUD'),
         ),
         body: Center(
-            //AGREGAR CARD API
-
-            ),
+          //AGREGAR CARD API
+          child: CardApi(),
+        ),
       ),
     );
   }
